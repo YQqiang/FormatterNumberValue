@@ -28,8 +28,8 @@ class FormatterNumberValueTest: XCTestCase {
     
     func testNum2() {
         let testStr = "123"
-        let targetStr = "123.123"
-        XCTAssert(testStr.formatterNumberValue() == "123", "测试通过")
+        let targetStr = "123"
+        XCTAssert(testStr.formatterNumberValue() == targetStr, "测试通过")
     }
     
     func testNum3() {
