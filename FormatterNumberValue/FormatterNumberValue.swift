@@ -30,6 +30,8 @@ extension String {
         numFmt.maximumFractionDigits = 3
         numFmt.minimumFractionDigits = 0
         numFmt.numberStyle = .decimal
-        return numFmt.string(from: decimalNum) ?? ""
+        let result = numFmt.string(from: decimalNum) ?? ""
+        let isValid = NSDecimalNumber(string: result).compare(NSDecimalNumber(string: "0.001")) == .orderedAscending && (decimalNum != NSDecimalNumber.zero)
+        return (isValid) ? self : result
     }
 }
