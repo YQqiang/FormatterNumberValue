@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2F2CFB7D206CAF03002C49BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CFB7C206CAF03002C49BA /* main.swift */; };
+		2F2CFB84206CAF0D002C49BA /* FormatterNumberValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CFB83206CAF0D002C49BA /* FormatterNumberValue.swift */; };
+		2F2CFB8C206CB0CE002C49BA /* FormatterNumberValueTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CFB8B206CB0CE002C49BA /* FormatterNumberValueTest.swift */; };
+		2F2CFB91206CB174002C49BA /* FormatterNumberValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2CFB83206CAF0D002C49BA /* FormatterNumberValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		2F2CFB79206CAF03002C49BA /* FormatterNumberValue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FormatterNumberValue; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F2CFB7C206CAF03002C49BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2F2CFB83206CAF0D002C49BA /* FormatterNumberValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterNumberValue.swift; sourceTree = "<group>"; };
+		2F2CFB89206CB0CE002C49BA /* FormatterNumberValueTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormatterNumberValueTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F2CFB8B206CB0CE002C49BA /* FormatterNumberValueTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterNumberValueTest.swift; sourceTree = "<group>"; };
+		2F2CFB8D206CB0CE002C49BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2F2CFB76206CAF03002C49BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2CFB86206CB0CE002C49BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				2F2CFB7B206CAF03002C49BA /* FormatterNumberValue */,
+				2F2CFB8A206CB0CE002C49BA /* FormatterNumberValueTest */,
 				2F2CFB7A206CAF03002C49BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				2F2CFB79206CAF03002C49BA /* FormatterNumberValue */,
+				2F2CFB89206CB0CE002C49BA /* FormatterNumberValueTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				2F2CFB7C206CAF03002C49BA /* main.swift */,
+				2F2CFB83206CAF0D002C49BA /* FormatterNumberValue.swift */,
 			);
 			path = FormatterNumberValue;
+			sourceTree = "<group>";
+		};
+		2F2CFB8A206CB0CE002C49BA /* FormatterNumberValueTest */ = {
+			isa = PBXGroup;
+			children = (
+				2F2CFB8B206CB0CE002C49BA /* FormatterNumberValueTest.swift */,
+				2F2CFB8D206CB0CE002C49BA /* Info.plist */,
+			);
+			path = FormatterNumberValueTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 2F2CFB79206CAF03002C49BA /* FormatterNumberValue */;
 			productType = "com.apple.product-type.tool";
 		};
+		2F2CFB88206CB0CE002C49BA /* FormatterNumberValueTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F2CFB8E206CB0CE002C49BA /* Build configuration list for PBXNativeTarget "FormatterNumberValueTest" */;
+			buildPhases = (
+				2F2CFB85206CB0CE002C49BA /* Sources */,
+				2F2CFB86206CB0CE002C49BA /* Frameworks */,
+				2F2CFB87206CB0CE002C49BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormatterNumberValueTest;
+			productName = FormatterNumberValueTest;
+			productReference = 2F2CFB89206CB0CE002C49BA /* FormatterNumberValueTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +136,10 @@
 				ORGANIZATIONNAME = sungrow;
 				TargetAttributes = {
 					2F2CFB78206CAF03002C49BA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2F2CFB88206CB0CE002C49BA = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +158,20 @@
 			projectRoot = "";
 			targets = (
 				2F2CFB78206CAF03002C49BA /* FormatterNumberValue */,
+				2F2CFB88206CB0CE002C49BA /* FormatterNumberValueTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F2CFB87206CB0CE002C49BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F2CFB75206CAF03002C49BA /* Sources */ = {
@@ -121,6 +179,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F2CFB7D206CAF03002C49BA /* main.swift in Sources */,
+				2F2CFB84206CAF0D002C49BA /* FormatterNumberValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F2CFB85206CB0CE002C49BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2CFB8C206CB0CE002C49BA /* FormatterNumberValueTest.swift in Sources */,
+				2F2CFB91206CB174002C49BA /* FormatterNumberValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +319,32 @@
 			};
 			name = Release;
 		};
+		2F2CFB8F206CB0CE002C49BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FormatterNumberValueTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.FormatterNumberValueTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2F2CFB90206CB0CE002C49BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FormatterNumberValueTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sungrow.FormatterNumberValueTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +362,15 @@
 			buildConfigurations = (
 				2F2CFB81206CAF03002C49BA /* Debug */,
 				2F2CFB82206CAF03002C49BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F2CFB8E206CB0CE002C49BA /* Build configuration list for PBXNativeTarget "FormatterNumberValueTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F2CFB8F206CB0CE002C49BA /* Debug */,
+				2F2CFB90206CB0CE002C49BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
