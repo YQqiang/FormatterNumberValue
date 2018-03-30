@@ -9,6 +9,9 @@
 import Foundation
 
 extension String {
+    /// 格式化字符串: 保留三位小数, 按四舍五入规则
+    ///
+    /// - Returns: 处理后的字符串
     func formatterNumberValue() -> String {
         // 1. 校验是否是数字类型
         guard Double(self) != nil else {
